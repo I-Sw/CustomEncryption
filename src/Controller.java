@@ -1,10 +1,9 @@
 public class Controller {
     public static void main(String args[])
     {
-        String encrypted = Encrypt.encryptString("Test");
-        System.out.println(encrypted);
+        String encryptedText = Encrypt.encrypt("Finally got this hellish program working?");
+        System.out.println(encryptedText);
 
-        String decrypted = Decrypt.decryptString(encrypted);
-        System.out.println(decrypted);
+        System.out.println(Decrypt.decrypt(encryptedText));
     }
 }
